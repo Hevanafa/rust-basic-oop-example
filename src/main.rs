@@ -15,7 +15,7 @@ fn main() {
 	// get new radius
 	let mut temp = String::new();
 	stdin().read_line(&mut temp).unwrap();
-	let new_radius = temp.parse::<f32>().unwrap();
+	let new_radius = temp.trim().parse::<f32>().unwrap();
 
 	c.set_radius(new_radius);
 	println!("New radius: {}", c.get_radius());
